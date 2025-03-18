@@ -1,0 +1,153 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li><a class="nav-link" href="#Python_Basics">Python Basics</a>
+          </li>
+          <li><a class="nav-link" href="#Functions_and_Modules">Functions and Modules</a>
+          </li>
+          <li><a class="nav-link" href="#Object-Oriented_Programming_(OOP)">Object-Oriented Programming (OOP)</a>
+          </li>
+          <li><a class="nav-link" href="#File_Handling">File Handling</a>
+          </li>
+          <li><a class="nav-link" href="#Conclusion">Conclusion</a>
+          </li>
+          <li><a class="nav-link" href="#Reference">Reference</a>
+          </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and released in 1991. Python is widely used for web development, data science, artificial intelligence, automation, and more.
+</p>
+            <h2>Why Python?</h2>
+            <ul>
+              <li><span>Easy to Learn & Readable</span> – Python’s syntax is simple and similar to human language.</li>
+              <li><span>Versatile </span>– It supports multiple programming paradigms (procedural, object-oriented, functional).</li>
+              <li><span>Large Community & Libraries </span>– Huge ecosystem with libraries like NumPy, Pandas, Django, TensorFlow, etc.</li>
+              <li><span>Cross-Platform </span>– Runs on Windows, macOS, Linux, and even embedded systems.</li>
+              <li><span>Automation & AI </span>– Used for scripting, machine learning, and automation tasks.</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Python_Basics">
+          <header>Python Basics</header>
+          <article>
+          <p>To get started with writing Python here are some Syntax and Data Types you will use</p>
+          <h3>Syntax and Data Types
+          </h3>
+          <p>For example if you want to declare your name, age or a number you can use the following:</p>
+          <code>name = "Alice"
+age = 25
+height = 5.6
+is_student = True</code>
+<h3>Control Flow</h3>
+<p>Control flow determines the order in which statements are executed in a program. Python provides several ways to control the flow of execution:</p>
+<ol>
+  <li>Conditional Statements (if, elif, else)
+These allow you to execute different blocks of code based on conditions.</li>
+<code>
+if age > 18:<br>
+    print("Adult")<br>
+else:<br>
+    print("Minor")<br></code>
+    <li>Loops (for, while):<br>
+Loops repeat a block of code multiple times.<ul>
+  <li>For Loop: Iterates over a sequence.</li>
+  <code>for i in range(3):<br>
+    print(i)<br>  # Outputs 0, 1, 2</code>
+    <li>While Loop: Runs while a condition is true.</li>
+    <code>x = 0
+while x < 3:
+    print(x)
+    x += 1</code></ul></li>
+       </ol>
+        </article>
+        </section>
+        <section class="main-section" id="Functions_and_Modules">
+          <header>Functions and Modules</header>
+          <article>
+          <h3>Functions</h3>
+          <p>Functions are reusable blocks of code that perform specific tasks. They help in code reusability, modularity, and readability.<span>Defining a Function
+A function is defined using the def keyword:</span></p>
+<code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))  # Output: Hello, Alice!</code>
+          <h3>Modules</h3>
+          <p>A module is a file containing Python code (functions, classes, variables) that can be reused in other programs.</p>
+          <p><span>Importing a Module</span>Python provides built-in modules like math:</p>
+          <code>import math
+print(math.sqrt(16))  # Output: 4.0</code>
+        </article>
+        </section>
+        <section class="main-section" id="Object-Oriented_Programming_(OOP)">
+          <header>Object-Oriented Programming (OOP)</header>
+          <article>
+          <p>Object-Oriented Programming (OOP) is a programming paradigm based on objects, which are instances of classes. It allows for encapsulation, inheritance, and polymorphism, making code more modular and reusable.</p>
+          <h3> Defining a Class</h3>
+          <p>A class is a blueprint for creating objects, and an object is an instance of a class.</p>
+          <code>class Person:
+                def __init__(self, name, age):
+                self.name = name
+                 self.age = age
+                def greet(self):
+                return f"Hello, my name is {self.name}"
+                person1 = Person("Alice", 25)
+                print(person1.greet())</code>
+        </section>
+        <section class="main-section" id="File_Handling">
+          <header>File Handling</header>
+          <p>File handling in Python allows reading, writing, and managing files efficiently. The key functions used are open(), read(), write(), and close(). Python supports different file modes:</p>
+          <ul>
+            <li>
+              "r" – Read mode (default)
+            </li>
+            <li>
+              "w" – Write mode (overwrites existing content)
+            </li>
+            <li>
+              "a" – Append mode (adds content to the file)
+            </li>
+            <li>
+              "r+" – Read and write
+            </li>
+          </ul>
+          <h3>Example of Writing to a File</h3>
+          <code>with open("example.txt", "w") as file:
+    file.write("Hello, Python!")</code>
+          <h3>Example of Reading a File</h3>
+          <code>with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)</code>
+    </article>
+        </section>
+        <section class="main-section" id="Conclusion">
+          <header>Conclusion</header>
+          <article>
+          Python is a powerful, versatile language used in web development, data science, and automation. By mastering Python's core concepts, developers can create efficient, scalable applications.
+          </article>
+          </section>
+          <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+              <ul>
+                <li>For further learning, visit <a href="https://docs.python.org/3/">Python Docs</a></li>
+              </ul>
+            </article>
+          </section>
+      </main>
+    </body>
+    </html>
